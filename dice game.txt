@@ -1,0 +1,7 @@
+10 wonPoints = 0                                                          
+20 die.toss = int(rnd*6) + 1 ' random number bet 1 and 6            
+30 while die.toss <> 6 and wonPoints < 20                                 
+40   wonPoints = wonPoints + die.toss                                         50   die.toss = int(rnd*6) + 1                                     
+60 wend                                                             
+70 if die.toss = 6 then wonPoints = 0                                     
+80 if wonPoints>0 then print "You have won";wonPoints;"points" else print"You have lost the game" 
